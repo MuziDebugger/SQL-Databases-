@@ -1,0 +1,56 @@
+CREATE TABLE CarDealership
+(Make text PRIMARY_KEY, Model text, Year int, Price int);
+
+
+
+INSERT INTO CarDealership VALUES('Renault', 'Clio', 2019, 247000);
+INSERT INTO CarDealership VALUES('Audi', 'A6', 2015, 623000);
+INSERT INTO CarDealership VALUES('Jaguar', 'F-Type', 2018, 128000);
+INSERT INTO CarDealership VALUES('Audi', 'R8', 2019, 320000);
+
+
+INSERT INTO CarDealership VALUES('BMW', '1 Series', 2016, 433000);
+INSERT INTO CarDealership VALUES('BMW', '2 Series', 2017, 543000);
+INSERT INTO CarDealership VALUES('Audi', 'A7', 2018, 825000);
+INSERT INTO CarDealership VALUES('Audi', 'Q5', 2016, 647000);
+INSERT INTO CarDealership VALUES('Audi', 'RS6', 2016, 1600000);
+INSERT INTO CarDealership VALUES('BMW', 'M1', 2015, 640000);
+INSERT INTO CarDealership VALUES('BMW', 'M4', 2018, 682000);
+INSERT INTO CarDealership VALUES('BMW', 'X6', '2018', 927000);
+INSERT INTO CarDealership VALUES('Porsche', 'Cayene', 2018, 703000);
+
+INSERT INTO CarDealership VALUES('BMW', 'Z4', '2016', 648000);
+INSERT INTO CarDealership VALUES('Aston Martin', 'DB9' , 2011);
+INSERT INTO CarDealership VALUES(Jaguar, XE, 2016, 728000);
+INSERT INTO CarDealership VALUES('BMW', 'i8', 2016, 1200000);
+INSERT INTO CarDealership VALUES('BMW', 'X4', 2018, 723000);
+INSERT INTO CarDealership VALUES('Mazda', 'MX5', 2017, 428000);
+INSERT INTO CarDealership VALUES('Audi', 'A5', 2016, 526000);
+INSERT INTO CarDealership VALUES('Audi', 'A1', 2018, 406000);
+INSERT INTO CarDealership VALUES('Audi', 'Q7', 2016, 704000);
+INSERT INTO CarDealership VALUES('Bentley', 'Bentayga', 2019, 1700000);
+
+
+
+INSERT INTO CarDealership VALUES('BMW', 'i3', 2017, 672000);
+INSERT INTO CarDealership VALUES('Mercedes-Benz', 'C-Class', 2016, 759000);
+INSERT INTO CarDealership VALUES('Mercedes-Benz', 'E-Class', 2017, 839000);
+INSERT INTO CarDealership VALUES('Jaguar', 'E-Pace', 2019, 806000);
+INSERT INTO CarDealership VALUES('BMW', 'M Coupe', 2016, 808000);
+INSERT INTO CarDealership VALUES('Suzuki', 'Ciaz', 2018);
+INSERT INTO CarDealership VALUES('Mercedes-Benz', 'CLA', 2016, 728000);
+INSERT INTO CarDealership VALUES('Mazda', 'Mazda 3', 2017, 282000);
+
+INSERT INTO CarDealership VALUES('Bentley', 'Continental GT', 2019, 1820000);
+INSERT INTO CarDealership VALUES('Mercedes-Benz', 'AMG-GT', 2018, 3280000);
+INSERT INTO CarDealership VALUES('Mercedes-Benz', 'S-CLass', 2016, 14000000);
+INSERT INTO CarDealership VALUES('Lexus', 'LFA', 2016, 728000);
+INSERT INTO CarDealership VALUES('Lexus', 'IS200', 2015, 428000);
+
+INSERT INTO CarDealership VALUES('Porsche', '911', 2017, 2800000);
+INSERT INTO CarDealership VALUES('BMW', '7 Series', 2019, 1400000);
+INSERT INTO CarDealership VALUES('Mazda', 'Mazda 6', 2017, 325000);
+INSERT INTO CarDealership VALUES('Porsche', 'Boxter', 2019, 728000);
+INSERT INTO CarDealership VALUES('Porsche', 'Cayman S', 2018, 843000);
+INSERT INTO CarDealership VALUES('Porsche', 'Panamera', 2018, 1600000);
+INSERT INTO CarDealership VALUES('Mazda', 'Mazda 2', 2017, 204000);

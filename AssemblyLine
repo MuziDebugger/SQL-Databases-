@@ -1,0 +1,61 @@
+package cardatabase;
+
+import java.sql.*;
+
+public class AssemblyLine {
+	public static void main(String[] args) {
+
+	
+    try {
+        Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\27817\\Documents\\Database\\JAX_Project");
+//        conn.setAutoCommit(false);
+        Statement statement = conn.createStatement();
+        statement.execute("CREATE TABLE IF NOT EXISTS JAX_Employees " +
+                          " (emp_id INTEGER, employeeName TEXT, emp_duty TEXT, emp_salary INTEGER)");
+      statement.execute("INSERT INTO JAX_Employees (emp_id, empName, emp_duty, emp_salary) " +
+                          "VALUES(01, Mike Manson, 'interior_design', 12_000)");
+      
+      statement.execute("INSERT INTO JAX_Employees (emp_id, empName, emp_duty, emp_salary) " +
+              "VALUES(02, Thabiso Molemi, 'safety inspector', 27_000)");
+
+      statement.execute("INSERT INTO JAX_Employees (emp_id, empName, emp_duty, emp_salary) " +
+              "VALUES(03, Pete Mayers, 'security', 8000)");
+
+      
+      statement.execute("INSERT INTO JAX_Employees (emp_id, empName, emp_duty, emp_salary) " +
+              "VALUES(04, Gerrard Townsend, 'tech_developer', 24_000)");
+
+      
+      statement.execute("INSERT INTO JAX_Employees (emp_id, empName, emp_duty, emp_salary) " +
+              "VALUES(05, Loyiso Uxholo, 'exterior_parts_assembler', 19_000)");
+
+//         UPDATING A CONTACT 
+//        statement.execute("UPDATE CONTACTS SET phone = 76422 WHERE NAME = 'Jane'");
+        
+        // DELETING A CONTACT
+//        statement.execute("DELETE FROM CONTACTS WHERE NAME = 'Joe'");
+
+        
+        
+        
+        statement.execute("SELECT * FROM JAX_Employees");
+        ResultSet results = statement.getResultSet();
+        while(results.next()) {
+            System.out.println(
+            		           results.getInt("emp_id") +
+            		           results.getString("name") + " " +
+                               results.getString("emp_duty") + " " +
+                               results.getInt("emp_salary"));
+        }
+
+        results.close();
+
+        statement.close();
+        conn.close();
+
+    } catch (SQLException e) {
+        System.out.println("Cannot retrieve employee info at the moment: " + e.getMessage());
+        e.printStackTrace();
+    }
+}
+}
